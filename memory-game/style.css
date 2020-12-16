@@ -20,3 +20,8 @@ body{
     padding: 32px;
     cursor: pointer;
 }
+@media(max-width: 567px){
+    .card{
+        padding: 16px;
+    }
+}
