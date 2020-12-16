@@ -81,7 +81,6 @@ document.addEventListener("DOMContentLoaded", () => {
       cardContainer.addEventListener("click", flipCard);
       grid.appendChild(cardContainer);
     }
-    
   }
 
   //check for matches
@@ -91,20 +90,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const optionTwoId = cardsChosenId[1];
 
     if (optionOneId == optionTwoId) {
-      cards[optionOneId].classList.remove('flipped');
-      cards[optionTwoId].classList.remove('flipped');
-      
+      cards[optionOneId].classList.remove("flipped");
+      cards[optionTwoId].classList.remove("flipped");
     } else if (cardsChosen[0] === cardsChosen[1]) {
-      
       cards[optionOneId].removeEventListener("click", flipCard);
       cards[optionTwoId].removeEventListener("click", flipCard);
       cards[optionOneId].classList.add("card-disabled");
       cards[optionTwoId].classList.add("card-disabled");
       cardsWon.push(cardsChosen);
     } else {
-		cards[optionOneId].classList.remove('flipped');
-		cards[optionTwoId].classList.remove('flipped');
-    
+      cards[optionOneId].classList.remove("flipped");
+      cards[optionTwoId].classList.remove("flipped");
     }
     cardsChosen = [];
     cardsChosenId = [];
@@ -113,19 +109,25 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Congratulations! You found them all!");
       grid.innerHTML = "";
       resultDisplay.textContent = "0";
+      cardsChosen = [];
+      cardsChosenId = [];
+      cardsWon = [];
       createBoard();
     }
   }
 
   //flip your card
   function flipCard() {
-	this.classList.add('flipped');
-	var cardId = this.getAttribute("data-id");
-	
-    cardsChosen.push(cardArray[cardId].name);
-	cardsChosenId.push(cardId);
+    this.classList.add("flipped");
+    var cardId = this.getAttribute("data-id");
 
-	this.querySelector(".flip-card-back .back-img").setAttribute("src", cardArray[cardId].img)
+    cardsChosen.push(cardArray[cardId].name);
+    cardsChosenId.push(cardId);
+
+    this.querySelector(".flip-card-back .back-img").setAttribute(
+      "src",
+      cardArray[cardId].img
+    );
 
     if (cardsChosen.length === 2) {
       setTimeout(checkForMatch, 500);
