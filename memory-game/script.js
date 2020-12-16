@@ -51,6 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   ];
 
+  cardArray.sort(() => 0.5 - Math.random());
+
   const grid = document.querySelector(".grid");
   const resultDisplay = document.querySelector("#result");
   var cardsChosen = [];
@@ -70,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
       		<img class="front-img" src="${pathToStockImg}">
       	  </div>
       	  <div class="flip-card-back">
-      		<img class="back-img" src="./img/empty-block.png">
+      		<img class="back-img" src="${cardArray[i].img}">
       	  </div>
       	</div>`;
 
@@ -79,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cardContainer.addEventListener("click", flipCard);
       grid.appendChild(cardContainer);
     }
-    cardArray.sort(() => 0.5 - Math.random());
+    
   }
 
   //check for matches
