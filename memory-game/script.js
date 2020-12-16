@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
       		<img class="front-img" src="${pathToStockImg}">
       	  </div>
       	  <div class="flip-card-back">
-      		<img class="back-img" src="${pathToStockImg}">
+      		<img class="back-img" src="./img/empty-block.png">
       	  </div>
       	</div>`;
 
