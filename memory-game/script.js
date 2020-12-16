@@ -4,51 +4,51 @@ document.addEventListener('DOMContentLoaded', () => {
    
 		{
 		  name: "joker",
-		  img: "../../img/joker.png",
+		  img: "./img/joker.png",
 		},
 		{
 		  name: "king",
-		  img: "../../img/king.png",
+		  img: "./img/king.png",
 		},
 		{
 		  name: "princess",
-		  img: "../../img/princess.png",
+		  img: "./img/princess.png",
 		},
 		{
 		  name: "executioner",
-		  img: "../../img/executioner.png",
+		  img: "./img/executioner.png",
 		},
 		{
 		  name: "horse",
-		  img: "../../img/horse.png",
+		  img: "./img/horse.png",
 		},
 		{
 		  name: "gallow",
-		  img: "../../img/gallow.png",
+		  img: "./img/gallow.png",
 		},
 		{
 			name: "joker",
-			img: "../../img/joker.png",
+			img: "./img/joker.png",
 		  },
 		  {
 			name: "king",
-			img: "../../img/king.png",
+			img: "./img/king.png",
 		  },
 		  {
 			name: "princess",
-			img: "../../img/princess.png",
+			img: "./img/princess.png",
 		  },
 		  {
 			name: "executioner",
-			img: "../../img/executioner.png",
+			img: "./img/executioner.png",
 		  },
 		  {
 			name: "horse",
-			img: "../../img/horse.png",
+			img: "./img/horse.png",
 		  },
 		  {
 			name: "gallow",
-			img: "../../img/gallow.png",
+			img: "./img/gallow.png",
 		  },
 	
 	  ];
