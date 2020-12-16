@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    border: 1px solid royalblue;
+}
+.card{
+    border: 1px solid royalblue;
+    width: 25%;
+    padding: 32px;
+    cursor: pointer;
+}
